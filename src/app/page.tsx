@@ -8,7 +8,8 @@ export default function Home() {
      <div>Reusable Components</div>
      <div className="flex w-full justify-around items-center">
       <Button onClick={()=>alert("yollow")}>Click Me</Button>
-      <Button onClick={()=>alert("yollow")}>Delete</Button>
+      <Button onClick={()=>alert("yollow")} size='lg' variant='danger'>Delete</Button>
+      <Button onClick={()=>alert("yollow")} size='lg' variant='good'>Done</Button>
      </div>
     </main>
   );
