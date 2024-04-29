@@ -36,5 +36,6 @@ const Button=({className,children,variant,size,...props}:ButtonProps)=>{
 
     return <button  {...props} className={cn(buttonVariant({variant,size}))} >{children}</button>
 }
+Button.displayName = "Button"
 
 export {Button}
