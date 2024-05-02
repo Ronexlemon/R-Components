@@ -1,0 +1,47 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "title": "Vegan Lentil Soup",
+        "description": "A hearty and flavorful soup made with lentils, vegetables, and spices.",
+        "image": "https://example.com/lentil_soup.jpg",
+        "vegan": true
+      },
+      {
+        "id": 2,
+        "title": "Quinoa Salad",
+        "description": "A refreshing salad with quinoa, mixed greens, tomatoes, cucumber, and a lemon vinaigrette.",
+        "image": "https://example.com/quinoa_salad.jpg",
+        "vegan": true
+      },
+      {
+        "id": 3,
+        "title": "Vegetable Stir-Fry",
+        "description": "A quick and easy stir-fry loaded with colorful vegetables and tofu, seasoned with soy sauce and garlic.",
+        "image": "https://example.com/vegetable_stir_fry.jpg",
+        "vegan": true
+      },
+      {
+        "id": 4,
+        "title": "Mushroom Risotto",
+        "description": "Creamy and flavorful risotto made with Arborio rice, mushrooms, onions, and vegetable broth.",
+        "image": "https://example.com/mushroom_risotto.jpg",
+        "vegan": false
+      },
+      {
+        "id": 5,
+        "title": "Vegan Chili",
+        "description": "A spicy and hearty chili made with beans, tomatoes, peppers, and spices, with no meat or dairy products.",
+        "image": "https://example.com/vegan_chili.jpg",
+        "vegan": true
+      },
+      {
+        "id": 6,
+        "title": "Avocado Toast",
+        "description": "Simple and delicious toast topped with mashed avocado, salt, pepper, and optional toppings like tomatoes or red pepper flakes.",
+        "image": "https://example.com/avocado_toast.jpg",
+        "vegan": true
+      }
+    ]
+  }
+  
