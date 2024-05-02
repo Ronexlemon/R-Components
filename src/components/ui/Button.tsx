@@ -9,7 +9,8 @@ const buttonVariant = cva("rounded-md ",{
             primary: "border-2 border-yellow-200 text-black  bg-white   ",
             secondary: "border-2 border-white  bg-black text-white ",
             danger: "border-none bg-red-500 text-white hover:bg-red-600 ",
-            good: "border-none bg-green-500 text-white hover:bg-green-600 "
+            good: "border-none bg-green-500 text-white hover:bg-green-600 ",
+            recipe: "border-none bg-orange-500 text-white hover:bg-orange-600 ",
 
 
 
