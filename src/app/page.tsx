@@ -27,6 +27,7 @@ export default function Home() {
 
       <Button onClick={()=>alert("yollow")} size='lg' variant='danger'>Delete</Button>
       <Button onClick={()=>alert("yollow")} size='lg' variant='good'>Done</Button>
+      <Button onClick={()=>alert("yollow")} size='lg' variant='good'>Don</Button>
      </div>
      <div className="grid grid-cols-3 gap-8">
      {recipes.map((recipe: Recipe, index: number) => (
