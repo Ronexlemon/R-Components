@@ -1,5 +1,5 @@
 "use client"
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 import { Recipe } from "@/types/apiTypes";
@@ -12,6 +12,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
@@ -64,6 +72,28 @@ export default function Home() {
         
         ))}
      </div>
+     <div className="border border-black w-full">
+     <Carousel className="w-full  ">
+      <CarouselContent className="-mr-0 md:-mr-16">
+        {Array.from({ length: 10 }).map((_, index) => (
+          <CarouselItem key={index} className=" md:basis-1/3 lg:basis-1/4 pl-0 ">
+            <div className="">
+              <Card className="border border-black rounded-0 ">
+                <CardContent className="flex aspect-square  items-center justify-center p-6">
+                  <span className="text-4xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+          
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+     </div>
+
+
     </main>
   );
 }
