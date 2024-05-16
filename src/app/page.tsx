@@ -132,7 +132,62 @@ export default function Home() {
 
      </div>
      <nav><h2>POSITIONING RELATIVE & STATIC</h2></nav>
+     {/***Element with position relative remains in the normal flow of the document
+      * 
+      */}
+     <div className=" container bg-black h-96 ">
+      <Card className="w-1/2 h-1/4  mt-5 bg-red-400 relative top-16 left-96   ">
+        <CardHeader>Hello One</CardHeader>
+        <CardContent>The great person ever</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4  mt-5 bg-green-400   ">
+        <CardHeader>Hello Two</CardHeader>
+        <CardContent>Absolute position to its parent "relative"</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4  mt-5 bg-blue-400 ">
+        <CardHeader>Hello FOUR</CardHeader>
+        <CardContent>Absolute position to its parent "relative"</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4 bg-yellow-400    mt-5 ">
+        <CardHeader>Hello Three</CardHeader>
+        <CardContent>The great person ever</CardContent>
+       
+      </Card>
 
+
+     </div>
+
+     <nav className="mt-10"><h2 >POSITIONING FIXED & STICKY</h2></nav>
+     {/***Element with position Fixed are remove from the document
+      * 
+      */}
+     <div className=" container bg-black h-96  ">
+      <Card className="w-1/2 h-1/4  mt-5 bg-red-400     ">
+        <CardHeader>Hello One</CardHeader>
+        <CardContent>The great person ever</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4  mt-5 bg-green-400   ">
+        <CardHeader>Hello Two</CardHeader>
+        <CardContent>Absolute position to its parent "relative"</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4  mt-5 bg-blue-400 ">
+        <CardHeader>Hello FOUR</CardHeader>
+        <CardContent>Absolute position to its parent "relative"</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 z-1 h-1/4 bg-yellow-400   fixed bottom-0  mt-5 ">
+        <CardHeader>Hello Three</CardHeader>
+        <CardContent>The great person ever</CardContent>
+       
+      </Card>
+
+
+     </div>
 
     </main>
   );
