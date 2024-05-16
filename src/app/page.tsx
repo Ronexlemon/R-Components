@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import icon from "../../public/cake.jpeg"
 
 import { Recipe } from "@/types/apiTypes";
 import { recipes } from "@/helpers/data";
@@ -92,6 +93,45 @@ export default function Home() {
       <CarouselNext />
     </Carousel>
      </div>
+     {/* new Item    
+     *absolute remove an item from the grid/ the entire document ,no space is created for them other element will behave as if it does not exists
+     */}
+            <nav><h2>POSITIONING RELATIVE & ABSOLUTE</h2></nav>
+     <div className=" container bg-black h-96 relative">
+      <Card className="w-1/2 h-1/4  mt-5 bg-red-400   ">
+        <CardHeader>Hello One</CardHeader>
+        <CardContent>The great person ever</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4  mt-5 bg-green-400 absolute  right-0  bottom-0  ">
+        <CardHeader>Hello Two</CardHeader>
+        <CardContent>Absolute position to its parent "relative"</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4  mt-5 bg-blue-400 absolute  right-32  z-index:40   opacity-30 ">
+        <CardHeader>Hello FOUR</CardHeader>
+        <CardContent>Absolute position to its parent "relative"</CardContent>
+       
+      </Card>
+      <Card className="w-1/2 h-1/4 bg-yellow-400    mt-5 ">
+        <CardHeader>Hello Three</CardHeader>
+        <CardContent>The great person ever</CardContent>
+       
+      </Card>
+
+
+     </div>
+
+     <div className="container bg-yellow-100 h-96 mt-5">
+     <Card className="w-1/2 h-3/4  mt-5 bg-blue-400 relative text-white ">
+        <CardHeader>Hello FOUR</CardHeader>
+        <CardDescription>Child Absolute</CardDescription>
+        <CardContent ><Image src={icon} className="absolute top-0 -z-1 opacity-30  right-14" alt=""/></CardContent>
+       
+      </Card>
+
+     </div>
+     <nav><h2>POSITIONING RELATIVE & STATIC</h2></nav>
 
 
     </main>
